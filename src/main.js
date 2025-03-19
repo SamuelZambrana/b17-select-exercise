@@ -25,3 +25,15 @@ function createBox() {
 }
 
 createBox();
+
+function changeColor() {
+  const selectElement = document.querySelector("select");
+  selectElement.addEventListener("change", (event) => {
+    const boxElement = document.querySelector(".box");
+    console.log(event.target);
+    const colorValue = event.target.value;
+    boxElement.classList = `box bg-${colorValue}`;
+  });
+}
+
+changeColor();
