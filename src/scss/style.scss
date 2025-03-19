@@ -1,5 +1,20 @@
-@use '../../node_modules/bootstrap/scss/bootstrap';
-@use './movieCard';
+@use "../../node_modules/bootstrap/scss/bootstrap";
+@use "./movieCard";
+
+#app {
+  padding: 50px;
+}
+
+select {
+  margin: 15px;
+  min-width: 100px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 15px;
+}
 
 .bg-red {
   background-color: red;
